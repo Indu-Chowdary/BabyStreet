@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navigation-->
+    <section id="home">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+       
+          <a class="navbar-brand p-3" href="#"><span class=" title fst-italic fw-4s">BabyStreet</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                  <div class="collapse navbar-collapse" id="mynav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item"><a class="nav-link text-uppercase p-3" href="#header">Home</a></li>
+                      <li class="nav-item"><a class="nav-link text-uppercase p-3" href="#About">About</a></li>
+                      <li class="nav-item dropdown">
+                       <a class="nav-link mt-2 dropdown-toggle" href="#navbarDropdown" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Category
+                       </a>
+                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <li><a class="dropdown-item"  data-bs-target="#girl" role="button" data-bs-toggle="modal"  href="#">Baby Girl</a>
+                         </li>
+                         <li>
+                           <a class="dropdown-item"  data-bs-target="#boy" role="button" data-bs-toggle="modal"  href="#">Baby Boy</a>
+                         </li>
+                         <li>
+                           <a class="dropdown-item" href="#">
+                             Toys and Accesories 
+                           </a>
+                           <ul class="dropdown-menu dropdown-submenu">
+                             <li>
+                               <a class="dropdown-item" data-bs-target="#hats" role="button" data-bs-toggle="modal" href="#">Hats</a>
+                             </li>
+                             <li>
+                               <a class="dropdown-item"  data-bs-target="#deddy" role="button" data-bs-toggle="modal" href="#">deddy bears</a>
+                             </li>
+                             <li>
+                               <a class="dropdown-item" data-bs-target="#glass" role="button" data-bs-toggle="modal" href="#">Glasess </a>
+                             </li>
+                             <li>
+                               <a class="dropdown-item" data-bs-target="#amish" role="button" data-bs-toggle="modal" href="#">Amish Dolls</a>
+                             </li>
+                             
+                           </ul>
+                         </li>
+                       </ul>
+                     
+                     </li>
+                      <li class="nav-item"><a class="nav-link text-uppercase p-3" href="#myCarousel">Offers</a></li>
+                      <li class="nav-item"><a class="nav-link text-uppercase p-3" href="#FAQ">FAQ</a></li>
+                      <li class="nav-item"><a class="nav-link text-uppercase p-3" data-bs-toggle="modal" data-bs-target="#Login" href="#Login">Login</a></li>
+                   </ul>
+                  </div>
+
+                  <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass p-3"></i>
+                    <i class="fa-solid fa-heart p-3"></i>
+                    <i class="fa-solid fa-cart-shopping p-3"></i>
+                  </div>
+                
+            </div>
+      
+
+        
+      </nav>
+     
+    
+  
+</section>
+
+ <!-- header -->
+ <header id = "header" class = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 104px;">
+  <div class = "container h-100 d-flex align-items-center carousel-inner">
+      <div class = "text-center carousel-item active">
+          <h2 class = "text-capitalize text-white">best collection</h2>
+          <h1 class = "text-uppercase py-2 fw-bold text-white">new arrivals</h1>
+          <a href = "#" class = "btn btn-light mt-3 text-uppercase">shop now</a>
+      </div>
+      <div class = "text-center carousel-item">
+          <h2 class = "text-capitalize text-white">best price & offer</h2>
+          <h1 class = "text-uppercase py-2 fw-bold text-white">new season</h1>
+          <a href = "#" class = "btn btn-light mt-3 text-uppercase">buy now</a>
+      </div>
+  </div>
+
+  <button class = "carousel-control-prev" type = "button" data-bs-target="#header" data-bs-slide = "prev">
+      <span class = "carousel-control-prev-icon"></span>
+  </button>
+  <button class = "carousel-control-next" type = "button" data-bs-target="#header" data-bs-slide = "next">
+      <span class = "carousel-control-next-icon"></span>
+  </button>
+</header>
+<!-- end of header -->
+
+
+ <!--About-->
+ 
+
+ <div class=" container about mt-3" id="About">
+  <div class=" row about_main">
+   <h1 class="text-center"><span class="text-warning fst-italic mt-3">About</span><span class="ms-4">Us</span></h1>
+      <div class="image col-md">
+          <img src="assets/about.jpg" class="fluid">
+      </div>
+
+      <div class="about_text col-md-7 d-flex justify-content-center">
+          
+          <p class="mt-5">
+            Shopping for your kid is no child's play and thus we help you explore,
+             choose and buy from an exhaustive & finest collection of kids' products. 
+             FirstCry buying guides, premium store, boutiques, products checklist, 
+             and look-books are all aimed towards an enriching and a fulfilling 
+             shopping experience.  <br><br>                           
+              
+              <i class="text-warning fs-3">Cool Kids Shop...</i>
+          </p>
+      </div>
+
+  </div>
+
+  <a href="#" class="about_btn">Order Now</a>
+
+</div>
+  
+<!-- end of about -->
+
+<!--Offer-->
+<div>
+  <h1 class="m-4 text-center"><span class="ms-4">New</span><span  class="text-warning fst-italic ms-3">Offers</span></h1>
+</div>
+    
+<div class="carousel slide mt-5" data-bs-ride="carousel" id="myCarousel">
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/offer.jpg" class="fluid" style= "width:90%; height:400px;margin-left: 70px;">
+        <div class="carousel-caption text-end">
+            <h1 class="fst-italic fw-bold" >
+              Up to 70% off  
+            </h1>
+            <h3 class="m-4">
+               jeans and shirts
+            </h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+          <img src="assets/offer1.jpg"  class="fluid"style= "width:90%; height:400px;margin-left: 70px;">
+           <div class="carousel-caption text-start">
+             <h1 class="fst-italic fw-bold" >
+              Up to 70% off | Formal for kids
+             </h1>
+             
+        </div>
+      </div>
+      <div class="carousel-item">
+          <img src="assets/off2.jpg" class="fluid" style= "width:90%; height:400px;margin-left: 70px;">
+          <div class="carousel-caption text-end">
+              <h1 class="fst-italic fw-bold" >
+                Up to 70% off 
+              </h1>
+              <h3 class="me-4">
+                sweater
+              </h3>
+          </div>
+      </div>
+    
+  
+  
+        <button type="button" class="carousel-control-prev" data-bs-target="#myCarousel" data-bs-slide="prev"  >
+           <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" data-bs-target="#myCarousel" data-bs-slide="next">
+           <span class="carousel-control-next-icon"></span>
+         </button>
+     
+          <div class="carousel-indicators">
+           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"> </button>
+           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"> </button>
+           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"> </button>
+           
+          </div>
+  </div>
+</div>
+
+<!--FAQ-->
+<div id="FAQ"class="container mt-5">
+  <h1 class="text-center text-warning fst-italic mt-3">FAQ</h1>
+  <div class="row">
+    <h1 class="mt-3 mb-5">Shopping Questions</h1>
+    <div class="col-md-6 justify-content-center">
+       
+       <h3 class="text-warning">Do you ship worldwide?</h3>
+       <p>Machine vision technology has been developed to track how fashions spread through society. 
+        The industry can now see the direct correlation on how fashion shows influence street-chic outfits.
+        The effects can now be quantified and provide valuable feedback to fashion houses,
+        designers and consumers regarding trends.</p>
+    </div>
+    <div class="col-md-6 justify-content-center">
+     
+      <h3  class="text-warning">How can I request a refund?</h3>
+      <p>Machine vision technology has been developed to track how fashions spread through society. 
+       The industry can now see the direct correlation on how fashion shows influence street-chic outfits.
+       The effects can now be quantified and provide valuable feedback to fashion houses,
+       designers and consumers regarding trends.</p>
+   </div>
+
+
+  </div>
+
+  <div class="row">
+    
+    <div class="col-md-6 justify-content-center">
+       
+       <h3  class="text-warning">Do you offer gift-vouchers?</h3>
+       <p>Machine vision technology has been developed to track how fashions spread through society. 
+        The industry can now see the direct correlation on how fashion shows influence street-chic outfits.
+        The effects can now be quantified and provide valuable feedback to fashion houses,
+        designers and consumers regarding trends.</p>
+    </div>
+    <div class="col-md-6 justify-content-center">
+     
+      <h3  class="text-warning">How can I use a coupon code?</h3>
+      <p>Machine vision technology has been developed to track how fashions spread through society. 
+       The industry can now see the direct correlation on how fashion shows influence street-chic outfits.
+       The effects can now be quantified and provide valuable feedback to fashion houses,
+       designers and consumers regarding trends.</p>
+   </div>
+
+
+  </div>
+</div>
+ <!--Accrodion-->
+ <div class="container">
+  <h2 class="mt-3">MISCELLANEOUS QUESTIONS</h2>
+    <div class="accordion mt-5">
+      <div class="accordion-item">
+          <div class="accordion-header">
+             <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion1Content"  active>
+           
+                Do you allow bakorders?
+             </button>
+          </div>
+            <div class="collapse accordion-collapse show" id="accordion1Content">
+               <div class="accordion-body">
+                   <p>Machine vision technology has been developed to track how fashions spread through society. 
+                    The industry can now see the direct correlation on how fashion shows influence street-chic outfits.
+                    The effects can now be quantified and provide valuable feedback to fashion houses,
+                    designers and consumers regarding trends.
+                   </p>
+                </div>
+            </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion2Content">
+              Which size to chose - EU vs US?
+             </button>
+        </div>
+         <div class="collapse accordion-collapse" id="accordion2Content">
+           <div class="accordion-body">
+            Machine vision technology has been developed to track how fashions spread through society. 
+            The industry can now see the direct correlation on how fashion shows influence street-chic outfits.
+            The effects can now be quantified and provide valuable feedback to fashion houses,
+            designers and consumers regarding trends.
+          </div>
+         </div>
+        </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+           <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion3Content">
+              Are there benefits for rigistered users?
+            </button>
+        </div>
+       <div class="collapse accordion-collapse" id="accordion3Content">
+           <div class="accordion-body">
+            Machine vision technology has been developed to track how fashions spread through society. 
+            The industry can now see the direct correlation on how fashion shows influence street-chic outfits.
+            The effects can now be quantified and provide valuable feedback to fashion houses,
+            designers and consumers regarding trends.
+           </div>
+       </div>
+      </div>
+
+       <div class="accordion-item">
+           <div class="accordion-header">
+               <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion4Content">
+                   What payment methods are available?
+               </button>
+           </div>
+           <div class="collapse accordion-collapse" id="accordion4Content">
+               <div class="accordion-body">
+                Machine vision technology has been developed to track how fashions spread through society. 
+                The industry can now see the direct correlation on how fashion shows influence street-chic outfits.
+                The effects can now be quantified and provide valuable feedback to fashion houses,
+                designers and consumers regarding trends.
+               </div>
+           </div>
+           </div>
+   
+
+           <div class="accordion-item">
+               <div class="accordion-header">
+                   <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion5Content">
+                       Do You offer gift wrapping?
+                   </button>
+               </div>
+               <div class="collapse accordion-collapse" id="accordion5Content">
+                   <div class="accordion-body">
+                    Machine vision technology has been developed to track how fashions spread through society. 
+                    The industry can now see the direct correlation on how fashion shows influence street-chic outfits.
+                    The effects can now be quantified and provide valuable feedback to fashion houses,
+                    designers and consumers regarding trends.
+                   </div>
+               </div>
+           
+           </div>  
+          
+          </div>
+          
+  </div>
+  </div>
+
+   <!--LOGIN FORM-->
+   <div class="modal w-4" id="Login" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+             <div class="modal-header">
+                 <h1  class="modal-text ">
+                       LOGIN
+                 </h1>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                 </div>
+             <div class="modal-body">
+                <div class="form-box">
+                  <div class="input-box ">
+                    <i class="bi bi-person-fill m-2 text-dark"></i>
+                    <input type="email" placeholder="UserName" class="border-none">
+                </div>
+                     <div class="input-box ">
+                        <i class="bi bi-envelope-fill m-2 text-dark"></i>
+                        <input type="email" placeholder="Email Id" class="border-none">
+                    </div>
+
+                    <div class="input-box">
+                        <i class="bi bi-key-fill m-2 text-dark"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                </div>   
+             </div>
+             <div class="modal-footer">
+                 <button class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                 <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+             </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!--Hats modal-->
+
+    <div class="modal fade modal-xl" id="hats">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="text-uppercase text-warning">Hats for babies</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card_box">
+                <div class="card">
+                  <img src="assets/hat4.jpg" class=" fluid card-img-top " alt="...">
+                </div>
+                <div class="small_card">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h3 class="text-center text-warning m-2">&#8377; 230</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning "></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                  <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                  <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+
+                </div>
+              
+              </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card_box">
+                <div class="card">
+                  <img src="assets/hat2.jpg" class="fluid card-img-top" alt="...">
+                </div>
+                <div class="small_card">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h3 class="text-center text-warning">&#8377; 499</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+                </div>
+              
+              </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card_box">
+                <div class="card">
+                  <img src="assets/hat3.jpg" class="fluid card-img-top" alt="...">
+                </div>
+                <div class="small_card">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h3 class="text-center text-warning">&#8377; 399</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+                </div>
+              
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Teddy modal-->
+
+    <div class="modal fade modal-xl" id="deddy">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="text-uppercase text-warning">Teddy's for babies</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card_box">
+                <div class="card">
+                  <img src="assets/deddy.jpg" class="fluid card-img-top " alt="...">
+                </div>
+                <div class="small_card">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h3 class="text-center text-warning m-2">&#8377; 300</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning "></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                  <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                  <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+
+                </div>
+              
+              </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card_box">
+                <div class="card">
+                  <img src="assets/deddy1.jpg" class=" fluid card-img-top" alt="...">
+                </div>
+                <div class="small_card">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h3 class="text-center text-warning">&#8377; 599</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+                </div>
+              
+              </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card_box">
+                <div class="card">
+                  <img src="assets/deddy2.jpg" class="fluid card-img-top" alt="...">
+                </div>
+                <div class="small_card">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h3 class="text-center text-warning">&#8377; 799</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+                </div>
+              
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Glasses for modal-->
+
+    <div class="modal fade modal-xl" id="glass">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="text-uppercase text-warning">Glasses for babies</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card_box">
+                <div class="card">
+                  <img src="assets/gs2.jpg" class="fluid card-img-top " alt="...">
+                </div>
+                <div class="small_card">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h3 class="text-center text-warning m-2">&#8377; 500</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning "></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                  <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                  <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+
+                </div>
+              
+              </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card_box">
+                <div class="card">
+                  <img src="assets/gls3.jpg" class="fluid card-img-top" alt="...">
+                </div>
+                <div class="small_card">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h3 class="text-center text-warning">&#8377; 399</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+                </div>
+              
+              </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card_box">
+                <div class="card">
+                  <img src="assets/Gls1.jpg" class="fluid card-img-top" alt="...">
+                </div>
+                <div class="small_card">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h3  class="text-center text-warning">&#8377; 999</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+                </div>
+              
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Amish-->
+
+    <div class="modal fade modal-xl" id="amish">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="text-uppercase text-warning">Amish Doll's for babies</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card_box">
+                <div class="card">
+                  <img src="assets/Amish.jpg" class="fluid card-img-top " alt="...">
+                </div>
+                <div class="small_card">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h3 class="text-center text-warning m-2">&#8377; 299</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning "></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                  <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                  <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+
+                </div>
+              
+              </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card_box">
+                <div class="card">
+                  <img src="assets/Amish1.jpg" class="fluid card-img-top" alt="...">
+                </div>
+                <div class="small_card">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h3 class="text-center text-warning">&#8377; 499</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+                </div>
+              
+              </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card_box">
+                <div class="card">
+                  <img src="assets/Amish2.jpg" class="fluid card-img-top" alt="...">
+                </div>
+                <div class="small_card">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h3 class="text-center text-warning">&#8377; 599</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+                </div>
+              
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Baby Girl-->
+
+    <div class="modal fade modal-xl" id="girl">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="text-uppercase text-warning">Dresses for small Kids </h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card_box" style="height:700px">
+                <div class="card">
+                  <img src="assets/frock.jpg" class="fluid card-img-top " alt="...">
+                </div>
+                <div class="small_card" style=" top: -500px;">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h2 class="text-center text-warning m-2 text-uppercase">frock</h2>
+                  <h3 class="text-center text-warning m-2">&#8377; 1099</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning "></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                  <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                  <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+
+                </div>
+              
+              </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card_box" style="height:700px">
+                <div class="card">
+                  <img src="assets/frock1.jpg" class="fluid card-img-top" alt="...">
+                </div>
+                <div class="small_card" style=" top: -500px;">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h2 class="text-center text-warning m-2 text-uppercase">frock</h2>
+                  <h3 class="text-center text-warning">&#8377; 499</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+                </div>
+              
+              </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card_box " style="height:700px">
+                <div class="card">
+                  <img src="assets/Queen.jpg" class="fluid card-img-top" alt="...">
+                </div>
+                <div class="small_card" style=" top: -500px;">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h2 class="text-center text-warning m-2 text-uppercase">frock</h2>
+                  <h3 class="text-center text-warning">&#8377; 999</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+                </div>
+              
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+
+    <!--Baby Boy-->
+
+    <div class="modal fade modal-xl" id="boy">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="text-uppercase text-warning">Dresses for small Kids</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card_box" style="height:750px">
+                <div class="card">
+                  <img src="assets/Sw2.jpg" class="fluid card-img-top " alt="...">
+                </div>
+                <div class="small_card" style=" top: -500px;">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h2 class="text-center text-warning m-2 text-uppercase">sweater</h2>
+                  <h3 class="text-center text-warning m-2">&#8377; 499</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning "></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                  <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                  <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+
+                </div>
+              
+              </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card_box" style="height:750px">
+                <div class="card">
+                  <img src="assets/jump2.jpg" class="fluid card-img-top" alt="...">
+                </div>
+                <div class="small_card" style=" top: -500px;">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h2 class="text-center text-warning m-2 text-uppercase">JumpSuit</h2>
+                  <h3 class="text-center text-warning">&#8377; 2999</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+                </div>
+              
+              </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card_box " style="height:750px">
+                <div class="card">
+                  <img src="assets/J2.jpg" class="fluid card-img-top" alt="...">
+                </div>
+                <div class="small_card" style=" top: -500px;">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+                <div class="card-body">
+                  <h2 class="text-center text-warning m-2 text-uppercase">Jeans</h2>
+                  <h3 class="text-center text-warning">&#8377; 699</h3>
+                  <div class="card_icon">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                </div>
+                <button  class="bg-warning text-white p-1 m-4">Order Now</button>
+                <button  class="bg-warning text-white p-1 m-4">Add to card</button>
+                </div>
+              
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <!--Footer-->
+
+ <footer class="mt-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+          <h2 class="m-2">Quick Link</h2>
+          <p class="m-2"><a href="#home">Home</a></p>
+          <p class="m-2"><a href="#About">About</a></p>
+          <p class="m-2"><a href="#FAQ">FAQ</a></p>
+          <p class="m-2"><a href="#home">Login</a></p>
+      </div>
+      
+    <div class="col-md-3">
+
+      
+          <h2 class="m-2">Contact</h2>
+          <p class="m-2">+91 9100528049</p>
+          <p class="m-2">+91 8886872704</p>
+          <p class="m-2">indhu789@gmail.com</p>
+          <p class="m-2">priya786@gmail.com</p>
+      </div>
+    
+   <div class="col-md-3">
+      
+          <h2 class="m-2">Our Service</h2>
+          <p class="m-2">Fast Delivery</p>
+          <p class="m-2">Easy Payments</p>
+          <p class="m-2">24 x 7 Service</p>
+      </div>
+   
+
+     <div class="col-md-3">
+      
+          <h2 class="m-2">Follows</h2>
+          <i class="fa-brands fa-facebook-f m-2"></i>
+          <i class="fa-brands fa-twitter m-2"></i>
+          <i class="fa-brands fa-instagram m-2"></i>
+          <i class="fa-brands fa-linkedin-in m-2"></i>
+      </div>
+     </div>
+
+  </div>
+  <div class="map row">
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.092645582573!2d78.44185637352089!3d17.407341002233277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb973c12af13ed%3A0x8c86a310fb58ac46!2sFirstCry.com%20Store%20Hyderabad%20Banjara%20Hills!5e0!3m2!1sen!2sin!4v1685683671424!5m2!1sen!2sin" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+
+  <p class="end">copy rights<span class="fst-italic">&copy; 2022-2023 BabyStreet</span></p>
+  </div>
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+
+  
+
+
+</body>
+</html>

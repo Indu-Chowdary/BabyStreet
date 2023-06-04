@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+}
+body{
+    font-family: var(--sm-font);
+}
+.title{
+    color: brown;
+    font-weight: 900;
+}
+
+/* header */
+#header{
+    background: url(assets/TS2.jpg) top/cover no-repeat;
+}
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+
+.carousel-item .btn:hover{
+    border-color: var(--pink)!important;
+}
+
+/*About*/
+.about .about_main .image img{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 50px;
+    left:-50px;
+    border-radius: 50%;
+}
+
+.about .about_main .about_text p{
+    width: 650px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+    top:50px;
+}
+
+.about .about_btn{
+    background: #fac031;
+    padding: 12px 55px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    left: 55%;
+    bottom: 30px;
+}
+
+/*login form*/
+
+
+    
+
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+.input-box{
+    margin:30px auto;
+    width:80%;
+    border-bottom:1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: black;
+}
+.input-box input{
+    width: 90%;
+    border: none;
+    outline: none;
+    background: transparent;
+
+}
+::placeholder{
+    color:black;
+}
+.bi{
+    margin: 2px;
+}
+.eye{
+    position: absolute;
+}
+
+    /*card*/
+    .card_box{
+    width: 330px;
+    height: 400px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .card_icon{
+       
+        text-align: center;
+        margin: 10px 0 10px 0;
+    }
+    .small_card{
+        width: 45px;
+        height: 45px;
+        float: right;
+        position: relative;
+        top: -240px;
+        right: -8px;
+        opacity: 0;
+        border-radius: 7px;
+        transition: 0.3s;
+    }
+    .small_card{
+        position: relative;
+        top: -200px;
+        right: 20px;
+        opacity: 1;
+    }
+    .small_card i{
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 50px;
+        color: #000;
+        cursor: pointer;
+        text-shadow: 0 0 6px #000;
+        transition: 0.2s;
+    }
+    .small_card i:hover{
+        color: #fac031;
+    }
+
+
+    /*footer*/
+
+footer{
+    width: 100%;
+    padding:30px;
+    background: #eeeeee;
+    margin-right:20px;
+}
+
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+footer .end span{
+    color: #fac031;
+    margin-left: 10px;
+}
+
+.map{
+    margin-left: 100px;
+}
